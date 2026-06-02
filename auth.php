@@ -5,10 +5,10 @@
 // PRODUÇÃO: substitua os valores abaixo pelos dados reais
 // criados no cPanel antes de fazer o deploy.
 // -------------------------------------------------------
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'agenda_escola');   // nome do banco no cPanel
-define('DB_USER', 'root');            // usuário do banco no cPanel
-define('DB_PASS', '');                // senha do banco no cPanel
+define('DB_HOST', getenv('MYSQLHOST')     ?: 'localhost');
+define('DB_NAME', getenv('MYSQLDATABASE') ?: 'agenda_escola');
+define('DB_USER', getenv('MYSQLUSER')     ?: 'root');
+define('DB_PASS', getenv('MYSQLPASSWORD') ?: '');
 // -------------------------------------------------------
 
 function getPDO(){
