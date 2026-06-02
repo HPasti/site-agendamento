@@ -1,0 +1,287 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* ===== HEADER AZUL MARINHO ===== */
+    .header-gov {
+      background-color: #1a2d6b;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .header-gov .brasao {
+      width: 80px;
+      height: 80px;
+      background-color: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+    }
+
+    .header-gov .gov-text {
+      color: #ffffff;
+      text-align: left;
+    }
+
+    .header-gov .gov-text span {
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .header-gov .gov-text strong {
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ===== TÍTULO DA ESCOLA ===== */
+    .escola-titulo {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 22px 20px 18px;
+      border-bottom: 1px solid #e8e8e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .escola-logo {
+      height: 70px;
+      width: auto;
+    }
+
+    .escola-titulo h1 {
+      font-size: 42px;
+      font-weight: 900;
+      color: #222;
+      letter-spacing: 2px;
+      display: inline;
+    }
+
+    .escola-titulo .subtitulo {
+      font-size: 16px;
+      color: #666;
+      margin-left: 14px;
+      font-weight: 400;
+    }
+
+    /* ===== BARRA DE NAVEGAÇÃO DOURADA ===== */
+    .navbar {
+      background-color: #f0b800;
+      padding: 0 500px;
+      display: flex;
+      align-items: center;
+      min-height: 52px;
+    }
+
+    .navbar-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .navbar-links a {
+      color: #1a2d6b;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 16px 0;
+      display: block;
+      opacity: 0.92;
+      transition: opacity 0.2s;
+    }
+
+    .navbar-links a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .navbar-divider {
+      color: rgba(26,45,107,0.5);
+      font-size: 13px;
+      padding: 16px 0;
+    }
+
+    /* ===== CONTEÚDO PRINCIPAL ===== */
+    .main-content {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* ===== BLOCO DE BOAS-VINDAS ===== */
+    .welcome-block {
+      background-color: #1a2d6b;
+      color: white;
+      padding: 30px 36px;
+      border-radius: 4px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .welcome-block h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .welcome-block p {
+      font-size: 15px;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ===== TÍTULO DA SEÇÃO ===== */
+    .section-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .section-title-underline {
+      width: 50px;
+      height: 4px;
+      background-color: #f0b800;
+      margin-bottom: 28px;
+    }
+
+    /* ===== GRADE DE CARDS DE SERVIÇOS ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 50px;
+    }
+
+    .service-card {
+      background-color: #1a2d6b;
+      color: #ffffff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+      border-radius: 3px;
+      transition: background-color 0.2s, transform 0.15s;
+      min-height: 90px;
+    }
+
+    .service-card:hover {
+      background-color: #111d4a;
+      transform: translateY(-2px);
+    }
+
+    .service-card .card-icon {
+      font-size: 26px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* ===== RODAPÉ ===== */
+    footer {
+      background-color: #e0e0e0;
+      padding: 32px 20px;
+      text-align: center;
+      color: #555;
+      font-size: 13px;
+      line-height: 1.8;
+      margin-top: 20px;
+    }
+
+    footer strong {
+      display: block;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    footer .social-links {
+      margin-top: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    footer .social-links a {
+      background-color: #888;
+      color: white;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 15px;
+      transition: background-color 0.2s;
+    }
+
+    footer .social-links a:hover {
+      background-color: #1a2d6b;
+    }
+
+    /* ===== RESPONSIVO ===== */
+    @media (max-width: 700px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .escola-titulo h1 {
+        font-size: 28px;
+      }
+
+      .escola-titulo .subtitulo {
+        display: block;
+        margin-left: 0;
+        margin-top: 4px;
+        font-size: 14px;
+      }
+
+      .header-gov {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+ 
