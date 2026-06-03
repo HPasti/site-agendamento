@@ -6,9 +6,9 @@
 // criados no cPanel antes de fazer o deploy.
 // -------------------------------------------------------
 define('DB_HOST', getenv('MYSQLHOST')     ?: 'localhost');
-define('DB_NAME', getenv('MYSQLDATABASE') ?: 'agenda_escola');
+define('DB_NAME', getenv('MYSQLDATABASE') ?: 'railway');
 define('DB_USER', getenv('MYSQLUSER')     ?: 'root');
-define('DB_PASS', getenv('MYSQLPASSWORD') ?: 'IBWGMufmloFxyhgSZZYHoeBzTuCcQUXS');
+define('DB_PASS', getenv('MYSQLPASSWORD') ?: '');
 // -------------------------------------------------------
 
 function getPDO(){
