@@ -6,7 +6,7 @@
 :8080 {
 	root * /app
 	encode zstd br gzip
-	php_server {
-		index index.html index.php
+	route {
+		php_server
 	}
 }
