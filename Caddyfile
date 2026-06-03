@@ -4,6 +4,9 @@
 }
 
 :8080 {
-	root * /app/public
-	php_server
+	root * /app
+	encode zstd br gzip
+	php_server {
+		index index.php index.html
+	}
 }
