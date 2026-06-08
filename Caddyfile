@@ -1,5 +1,5 @@
-[phases.setup]
-nixPkgs = ["php83", "php83Extensions.pdo_mysql", "php83Extensions.mysqli", "php83Extensions.mbstring"]
+:{$PORT}
 
-[start]
-cmd = "php -S 0.0.0.0:$PORT -t ."
+root * /app
+php_fastcgi localhost:9000
+file_server
