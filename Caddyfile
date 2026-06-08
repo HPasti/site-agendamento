@@ -1,12 +1,5 @@
-{
-	frankenphp
-	admin off
-}
+[phases.setup]
+nixPkgs = ["php83", "php83Extensions.pdo_mysql", "php83Extensions.mysqli", "php83Extensions.mbstring"]
 
-:8080 {
-	root * /app
-	encode zstd br gzip
-	php_server {
-		index index.html
-	}
-}
+[start]
+cmd = "php -S 0.0.0.0:$PORT -t ."
